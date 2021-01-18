@@ -1,0 +1,153 @@
+header {
+  height: 90px;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4%;
+}
+nav a {
+  text-decoration: none;
+  font-size: 22px;
+  text-transform: uppercase;
+  margin: 10px;
+}
+body {
+  margin: 0;
+  background: #f1f1f1;
+}
+.myactive {
+  border: 2px;
+  color: white;
+  background-color: blue;
+  padding: 10px;
+}
+.carousel img {
+  height: 500px;
+  object-fit: cover;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 4% 9%;
+  background: white;
+}
+.grid-container h1 {
+  color: blue;
+  text-transform: capitalize;
+}
+.grid-container p {
+  font-weight: 700;
+  text-transform: capitalize;
+  font-size: 22px;
+}
+.grid-container2 img {
+  width: 500px;
+  object-fit: cover;
+}
+.grid2-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* padding: 4%; */
+  justify-content: center;
+  /* background: white; */
+}
+.grid2-container span {
+  background: blue;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+
+  text-transform: capitalize;
+}
+.grid2-container h2 {
+  text-transform: capitalize;
+  color: blue;
+}
+.grid2-container .b {
+  border-bottom: 2px solid blue;
+}
+.grid2-container .b:not(:last-child) {
+  border-right: 2px solid blue;
+}
+.grid2-container .r {
+  border-right: 2px solid blue;
+}
+.grid3-container {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+}
+.grid3-container img {
+  height: 300px;
+  width: 100%;
+  padding: 10px;
+}
+.grid3-container h4 {
+  color: blue;
+  text-align: center;
+  text-transform: capitalize;
+}
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: linear-gradient(rgba(2, 5, 225, 0.9), rgba(0, 0, 1, 0.9));
+  color: white;
+  padding: 20px;
+}
+.myform {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 30px;
+  row-gap: 15px;
+  padding: 3%;
+}
+.myform input {
+  width: 100%;
+  margin-right: 12px;
+}
+.contact-info {
+  justify-self: center;
+}
+.myform2 textarea {
+  width: 100%;
+}
+.myform2 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 3%;
+}
+input::placeholder {
+  font-size: 22px;
+  font-weight: 900;
+}
+.carousel h5 {
+  font-size: 40px;
+  text-transform: capitalize;
+}
+.carousel p {
+  font-size: 25px;
+  text-transform: capitalize;
+}
+.carousel .carousel-caption {
+  height: 60%;
+}
+.contact-info div {
+  font-size: 22px;
+  text-transform: capitalize;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+h3 {
+  font-size: 32px;
+  text-transform: capitalize;
+}
+.footer-end {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 18px;
+  color: blue;
+  height: 60px;
+}
