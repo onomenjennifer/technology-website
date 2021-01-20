@@ -21,13 +21,15 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="shadow-sm">
-      <span>
+    <header class="">
+      <div>
         <img src="image/capture.png" alt="image" />
-      </span>
+      </div>
+
+      <button class="menu-btn"><i class="fas fa-bars fa-2x"></i></button>
 
       <nav>
-        <i class="fa fa-home fa-2x"></i>
+        <i class="fa fa-home fa-2x sm"></i>
         <a href="index.html" class="myactive">home</a>
         <a href="#">about</a>
         <a href="#">service</a>
@@ -40,6 +42,7 @@
       id="carouselExampleDark"
       class="carousel carousel-dark slide"
       data-bs-ride="carousel"
+      style="z-index:1"
     >
       <ol class="carousel-indicators">
         <li
@@ -57,7 +60,7 @@
             class="d-block w-100"
             alt="image"
           />
-          <div class="carousel-caption d-none d-md-block">
+          <div class="carousel-caption d-md-block">
             <h5>technology solution from cocept to delivery</h5>
             <p>
               we provide exceptional web,mobile and technology service,tailored
@@ -83,7 +86,7 @@
             class="d-block w-100"
             alt="image"
           />
-          <div class="carousel-caption d-none d-md-block">
+          <div class="carousel-caption  d-md-block">
             <h5>Third slide label</h5>
             <p>
               Praesent commodo cursus magna, vel scelerisque nisl consectetur.
@@ -107,7 +110,7 @@
         data-bs-slide="next"
       >
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
+        <span class="visually-hidde">Next</span>
       </a>
     </div>
     <div class="grid-container">
@@ -288,5 +291,13 @@
       integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
       crossorigin="anonymous"
     ></script>
+    <script>
+      const btn = document.getElementById(".menu-btn");
+      document
+        .querySelector(".menu-btn")
+        .addEventListener("click", () =>
+          document.querySelector("nav").classList.toggle("show")
+        );
+    </script>
   </body>
 </html>
